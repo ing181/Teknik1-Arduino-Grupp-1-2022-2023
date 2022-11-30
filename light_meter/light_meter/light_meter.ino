@@ -16,9 +16,13 @@ void loop() {
      digitalWrite(8,HIGH);
      digitalWrite(7,LOW);
    }
-   else {
+   else if (sensor > 800) {
           digitalWrite(7,HIGH);
           digitalWrite(8,LOW);
+   }
+   else {
+         digitalWrite(8,HIGH);
+          digitalWrite(7,HIGH);
    }
 
 }
