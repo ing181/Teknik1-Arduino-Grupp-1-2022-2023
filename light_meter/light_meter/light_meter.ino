@@ -12,6 +12,14 @@ void loop() {
   // put your main code here, to run repeatedly:
   sensor = analogRead(A0);
    Serial.println(sensor);
+   if (sensor > 600) {
+     digitalWrite(8,HIGH);
+     digitalWrite(7,LOW);
+   }
+   else {
+          digitalWrite(7,HIGH);
+          digitalWrite(8,LOW);
+   }
 
 }
 
